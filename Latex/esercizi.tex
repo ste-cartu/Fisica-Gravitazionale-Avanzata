@@ -10,6 +10,9 @@
 \usepackage{amssymb}
 \usepackage{tikz}
 \usepackage{pgfplots}
+\usepackage{fontawesome5}
+\usepackage{graphicx}
+
 
 \geometry{a4paper, top=2cm, bottom=2cm, left=2cm, right=2cm}
 \pgfplotsset{compat=1.18}
@@ -17,6 +20,7 @@
 \newcommand{\B}{\boldsymbol}
 \setlength\parindent{0pt}
 \setlength{\parskip}{0.2em}
+\graphicspath{{./Immagini/}}
 
 
 
@@ -62,7 +66,7 @@ $h_{+} = h \cos(\omega t)$ lungo $x$ e $h_{\times} = 0$.
 
 \subsection{Equazione del moto}
 
-Il problema descritto è un oscillatore armonico, posizionato lungo l'asse $x$, smorzato da una forza di attrito dovuta alla rigidità della molla e forzato dal passaggio di un'onda gravitazionale in direzione $\hat z$. Rappresentiamo quindi la situazione descritta:
+Il problema descritto è un oscillatore armonico, posizionato lungo l'asse $x$, smorzato da una forza di attrito dovuta alla rigidità della molla e forzato dal passaggio di un'onda gravitazionale in direzione $-\hat z$. Rappresentiamo quindi la situazione descritta:
 
 \begin{center}
 \begin{tikzpicture}[scale=1.2]
@@ -94,9 +98,9 @@ Il problema descritto è un oscillatore armonico, posizionato lungo l'asse $x$, 
 %Perciò faremo riferimento alla sezione 8.1.1 e 8.1.2 del Maggiore.
 %Un'ulteriore assunzione va fatta per quanto riguarda le dimensioni del sistema rispetto alla lunghezza d'onda incidente: assumeremo $L \ll \lambdabar$, condizione che sperimentalmente è ragionevole ed è inoltre giustificata dai dati numerici forniti nell'ultimo punto del problema.
 
-Per ricavare l'equazione del moto delle due masse, assumiamo che le dimensioni de sistema siano trascurabili rispetto alla scala di variazione del campo gravitazionale: assumiamo perciò $L \ll \lambdabar$.
+Per ricavare l'equazione del moto delle due masse, assumiamo che le dimensioni del sistema siano trascurabili rispetto alla scala di variazione del campo gravitazionale: assumiamo perciò $L \ll \lambdabar$.
 Tale approssimazione è sperimentalmente ragionevole ed è inoltre giustificata dai dati numerici forniti nell'ultimo punto del problema.
-Inoltre, facendo riferimento alla sezione 1.3.3 del Maggiore, ci poniamo nel proper detector frame: così facendo possiamo utilizzare il fatto che l'equazione della deviazione geodetica si riduce a quella di una forza newtoniana (equazione 1.96).
+In aggiunta, facendo riferimento alla sezione 1.3.3 del Maggiore, ci poniamo nel proper detector frame: così facendo possiamo utilizzare il fatto che l'equazione della deviazione geodetica si riduce a quella di una forza newtoniana (equazione 1.96).
 Perciò abbiamo che la forzante dovuta all'onda gravitazionale agente sulla $k$-esima massa assume la forma:
 
 \begin{equation} \label{eq:F}
@@ -294,7 +298,7 @@ La potenza irraggiata per unità di angolo solido in approssimazione di quadrupo
     \left( \frac{dP}{d\Omega} \right)_{\text{q}} = \frac{r^2 c^3}{16 \pi G} \langle \dot h_+^2 \rangle \ ,
 \end{equation}
 
-dove $r$ è la distanza dalla sorgente. L'ampiezza $h_+$ è calcolata a partire dall'equazione 3.72, considerando che, nel nostro caso, è conveniente definire l'angolo polare $\theta$ del sistema di coordinate sferiche a partire dall'asse $x$ ($\theta=0$), mentre l'angolo azimutale $\varphi$ descrive le rotazioni nel piano $z-y$, sotto le quali la potenza irradiata è invariante.
+dove $r$ è la distanza dalla sorgente. L'ampiezza $h_+$ è calcolata a partire dall'equazione 3.72 del Maggiore, considerando che, nel nostro caso, è conveniente definire l'angolo polare $\theta$ del sistema di coordinate sferiche a partire dall'asse $x$ ($\theta=0$), mentre l'angolo azimutale $\varphi$ descrive le rotazioni nel piano $z-y$, sotto le quali la potenza irradiata è invariante.
 In tale sistema di riferimento, il termine $M_{33}$ nell'equazione 3.72 diventa $M_{11}$, e questo è l'unico contributo che non si annulla.
 Infatti:
 
@@ -327,7 +331,7 @@ dove abbiamo sostituito il tempo ritardato $t_r = t + r/c$ con $t$ perché lo sf
 Come visto in precedenza, $\frac{1}{T}\int_0^T\sin^2(x)dx = \frac{1}{2}$, tuttavia il primo seno che compare nell'equazione \eqref{eq:hdotmedio} ha un periodo di $\frac{\pi}{\omega}$, perciò:
 
 \begin{equation} \label{eq:integraleperiodo}
-    \frac{\omega}{2 \pi} \left[ \int_0^{\pi/\omega} \sin^2(2\omega t) dt + \int_{\pi/\omega}^{2\pi/\omega} \sin^2(2\omega t) dt \right] = \frac{\omega}{2 \pi} \left[ \frac{\pi}{2 \omega} + \frac{\pi}{2 \omega} \right] = \frac{1}{2} \ .
+    \frac{1}{T}\int_0^T\sin^2(2 \omega t)dt = \frac{\omega}{2 \pi} \left[ \int_0^{\pi/\omega} \sin^2(2\omega t) dt + \int_{\pi/\omega}^{2\pi/\omega} \sin^2(2\omega t) dt \right] = \frac{\omega}{2 \pi} \left[ \frac{\pi}{2 \omega} + \frac{\pi}{2 \omega} \right] = \frac{1}{2} \ .
 \end{equation}
 
 Dunque, la potenza irradiata per unità di angolo solido in approssimazione di quadrupolo è:
@@ -432,7 +436,7 @@ plot ({-sqrt(\x*\x -1)},\x) -- (0,-1);
 \end{center}
 
 Da tale grafico possiamo intuire che, al primo ordine in $h$, le due masse sentano delle forze le quali, essendo tangenti alle linee di forza rappresentate, risultano essere parallele all'asse $y$.
-Inoltre, quando la massa $m_1$ viene tirata in basso, la massa $m_2$ sente una forza in verso opposto.
+Inoltre, quando la massa $m_1$ viene tirata in basso, la massa $m_2$ sente una forza verso l'alto e viceversa.
 Perciò le due masse inizieranno ad oscillare in controfase sull'asse $y$, mantenendo in prima approssimazione invariata la loro distanza relativa orizzontale: $|x_2 - x_1| = L$.
 
 Siccome le due masse sono diverse, avranno ampiezze di oscillazione differenti e questo, unito al fatto che il centro di massa del sistema non è esattamente a metà della distanza relativa tra le due molle, renderà instabile questa oscillazione lungo $y$.
@@ -481,7 +485,7 @@ In ultimo, verifichiamo che le assunzioni fatte per risolvere questo esercizio s
         Dai dati forniti, considerando che l'onda incidente abbia $\omega = \omega_R \simeq \omega_0$ abbiamo $L = 10$ m e $\lambdabar \simeq c/\omega_0 \simeq 0.48 \times 10^5$ m, per cui l'assunzione che abbiamo fatto è giustificata.
 
     \item Nella derivazione dell'equazione del moto, abbiamo assunto un segnale periodico, perciò abbiamo supposto che l'onda incida sul sistema per un tempo molto maggiore del tempo scala di dissipazione delle oscillazioni dovuto all'attrito.
-        In altre parole, l'equazione del moto \eqref{eq:eqmoto} è valida solo se il segnale dura un tempo $\Delta t \gg \tau$, con $\tau$ dato dall'equazione \eqref{eq:tau}, che vale $\tau \simeq 0.32 \times 10^3$ s.
+        In altre parole, l'equazione del moto \eqref{eq:eqmoto} è valida solo se il segnale dura un tempo $\Delta t \gg \tau$, con $\tau$ dato dall'equazione \eqref{eq:tau}, che vale $\tau \simeq 0.32 \times 10^3$ s. Inoltre dall'equazione \eqref{eq:tau}, vediamo che $\omega_0 = 2Q \gamma$, perciò siamo nel caso di un moto oscillatorio sottosmorzato. 
     
     \item Un'altra assunzione è stata quella di trascurare l'energia emessa dal sistema in oscillazione sotto forma di onde gravitazionali nel calcolo dell'energia totale.
         Confrontiamo quindi i valori numerici delle energie espresse dalle equazioni \eqref{eq:energiamediaperiodo} e \eqref{eq:energiairradiata}: la prima restituisce l'energia totale del sistema (cinetica più potenziale) mediata su un'oscillazione, che alla risonanza vale $\langle E \rangle_T \simeq 2T_R \simeq 2.46 \times 10^{-19}$ J, mentre la seconda rappresenta l'energia persa dal sistema a causa della sua emissione di onde gravitazionali in un periodo, che alla risonanza vale $E_q \simeq 2.81 \times 10^{-58}$ J.
@@ -525,7 +529,8 @@ In questo esercizio vogliamo comprendere le basi del lensing della CMB.
         \simeq T(\B\theta) + \Delta \theta^i \frac{\partial}{\partial \theta^i} T(\B\theta) + \frac{1}{2} \Delta \theta^i \Delta \theta^j \frac{\partial^2}{\partial \theta^i \partial \theta^j} T(\B\theta) \ .
 \end{equation}
 
-È lo sviluppo di Taylor della distribuzione di temperatura $T$ al variare dell'angolo $\B\theta$ bidimensionale al secondo ordine. Con $T$ si intende la distribuzione di temperatura al momento di emissione della CMB. \hfill $\blacksquare$
+È lo sviluppo di Taylor della distribuzione di temperatura $T$ al variare dell'angolo $\B\theta$ bidimensionale al secondo ordine. 
+Con $T(\B \theta)$ si intende la distribuzione di temperatura al momento di emissione della CMB. \hfill $\blacksquare$
 
 
 
@@ -639,7 +644,7 @@ Nei prossimi calcoli, indicheremo i termini di questo sviluppo come:
     
     \item $\displaystyle \delta_\Theta^{(2)} (\B l) = - \int \frac{d^2 \B l_1}{(2\pi)^2} \boldsymbol{l}_1 \cdot (\B l - \B l_1) \phi_L(\boldsymbol{l}_1) \Theta(\B l - \B l_1)$
 
-    \item $\displaystyle \delta_\Theta^{(2)} (\B l) = \frac{1}{2} \int \frac{d^2 \B l_1}{(2\pi)^2} \int \frac{d^2 \B l_2}{(2\pi)^2} [\B l_1 \cdot (\B l - \B l_1 - \B l_2)] [\B l_2 \cdot (\B l - \B l_1 - \B l_2)] \phi_L(\B l_1) \phi_L(\B l_2) \Theta(\B l - \B l_1 - \B l_2)$
+    \item $\displaystyle \delta_\Theta^{(2)} (\B l) = \frac{1}{2} \int \frac{d^2 \B l_1}{(2\pi)^2} \int \frac{d^2 \B l_2}{(2\pi)^2} [\B l_1 \cdot (\B l - \B l_1 - \B l_2)] [\B l_2 \cdot (\B l - \B l_1 - \B l_2)] \phi_L(\B l_1) \phi_L(\B l_2) \Theta(\B l - \B l_1 - \B l_2)$ .
 
 \end{itemize}
 
@@ -709,7 +714,7 @@ Adesso consideriamo i termini mancanti, definendo $\B L = \B l - \B l_1 - \B l_2
 \begin{equation}
 \begin{aligned}
     \langle \delta&_\Theta^{(1)}(\B l) \delta_\Theta^{(2)}(\B l) \rangle + \langle \delta_\Theta^{(2)}(\B l) \delta_\Theta^{(1)}(\B l) \rangle = \\
-        & = \frac{1}{2} \int \frac{d^2 \B l_1}{(2\pi)^2} \int \frac{d^2 \B l_2}{(2\pi)^2} (\boldsymbol{l}_1 \cdot \boldsymbol{L})(\boldsymbol{l}_2 \cdot \boldsymbol{L}) \big[ \langle \phi_L^*(\boldsymbol{l}_1) \phi_L^*(\boldsymbol{l}_2) \Theta(\boldsymbol{l}) \Theta^*(\boldsymbol{L})\rangle + \langle \phi_L(\boldsymbol{l}_1) \phi_L(\boldsymbol{l}_2) \Theta^*(\boldsymbol{l}) \Theta(\boldsymbol{L}) \rangle \big]
+        & = \frac{1}{2} \int \frac{d^2 \B l_1}{(2\pi)^2} \int \frac{d^2 \B l_2}{(2\pi)^2} (\boldsymbol{l}_1 \cdot \boldsymbol{L})(\boldsymbol{l}_2 \cdot \boldsymbol{L}) \big[ \langle \phi_L^*(\boldsymbol{l}_1) \phi_L^*(\boldsymbol{l}_2) \Theta(\boldsymbol{l}) \Theta^*(\boldsymbol{L})\rangle + \langle \phi_L(\boldsymbol{l}_1) \phi_L(\boldsymbol{l}_2) \Theta^*(\boldsymbol{l}) \Theta(\boldsymbol{L}) \rangle \big] \ .
 \end{aligned}
 \end{equation}
 
@@ -723,10 +728,10 @@ Applicando nuovamente il teorema di Wick per separare i contributi dei due campi
 \end{equation}
 
 Applicando le definizioni degli spettri di potenza, otteniamo dalla \eqref{eq:13.22} due funzioni $\delta_D^{(2)}(\B l_1 + \B l_2)$, che possiamo raccogliere e che, svolgendo l'integrale su $\B l_2$, impongono $\B l_2 = -\B l_1$.
-In tal modo si ha che $\B L = \B l$, compare un segno ´$-$' davanti all'integrale ed in aggiunta i due contributi si sommano, dando:
+In tal modo si ha che $\B L = \B l$, compare un segno meno davanti all'integrale ed in aggiunta i due contributi si sommano, dando:
 
 \begin{equation} \label{eq:quasiC13}
-    \langle \delta_\Theta^{(1)}(\B l) \delta_\Theta^{(2)}(\B l) \rangle + \langle \delta_\Theta^{(2)}(\B l) \delta_\Theta^{(1)}(\B l) \rangle = - \int \frac{d^2 \B l_1}{(2\pi)^2} (\boldsymbol{l} \cdot \boldsymbol{l}_1)^2 C_{\phi\phi}(l_1) C(l)
+    \langle \delta_\Theta^{(1)}(\B l) \delta_\Theta^{(2)}(\B l) \rangle + \langle \delta_\Theta^{(2)}(\B l) \delta_\Theta^{(1)}(\B l) \rangle = - \int \frac{d^2 \B l_1}{(2\pi)^2} (\boldsymbol{l} \cdot \boldsymbol{l}_1)^2 C_{\phi\phi}(l_1) C(l) \ .
 \end{equation}
 
 Infine, per scrivere l'equazione nella stessa forma del Dodelson, notiamo che, indicato con $\varphi$ l'angolo tra $\B l$ e $\B l_1$:
@@ -818,7 +823,7 @@ Ricordando la definizione \eqref{eq:Cl} ed utilizzando il fatto che $\phi_L(\B l
 \end{aligned}
 \end{equation}
 
-Infine, integrando i due termini, entrambe le delta di Dirac impongono $\B l_1 = \B l - \B l'$, e si ottiene:
+Infine, integrando i due termini, entrambe le funzioni delta impongono $\B l_1 = \B l - \B l'$, e si ottiene:
 
 \begin{equation}
 \begin{aligned}
@@ -834,7 +839,7 @@ così facendo abbiamo riottenuto la \eqref{eq:13.23}. \hfill $\blacksquare$
 
 \subsection{Spettro di potenza della temperatura della CMB}
 
-I fotoni provenienti dalla CMB sono stati emessi a redshift $z^* = z_{\text{ricomb}} \simeq 1089$, e prima di arrivare a noi hanno subito numerose deflessioni dovute alle fluttuazioni del potenziale gravitazionale dovute alla struttura su larga scala.
+I fotoni provenienti dalla CMB sono stati emessi a redshift $z^* = z_{\text{ricomb}} \simeq 1089$ e, prima di arrivare a noi, hanno subìto numerose deflessioni a causa delle fluttuazioni del potenziale gravitazionale dovute alla struttura su larga scala.
 In questo esercizio proviamo a ricostruire lo spettro delle anisotropie di temperatura partendo dal modello cosmologico standard, il $\Lambda$CDM.
 
 L'obiettivo quindi è quello di ricostruire computazionalmente l'equazione \eqref{eq:13.21}, a partire dai dati dello spettro senza correzioni di lensing.
@@ -863,42 +868,222 @@ mentre $g_L(\chi)$ è il kernel di lensing, che dipende dalla distribuzione dell
 \end{equation}
 
 dove $\chi^* = \chi(z^*)$.
-Per calcolare $C_{\kappa\kappa}$, dunque, dobbiamo far evolvere lo spettro di potenza della materia dato, i.e. $P(k,z=0)$, fino a $z^*$, per farlo è necessario definire il fattore di crescita $D(z)$, dato dall'equazione 8.76 del Dodelson:
+Per calcolare $C_{\kappa\kappa}$, dunque, dobbiamo far evolvere lo spettro di potenza della materia dato, cioè $P(k,z=0)$, fino a $z^*$, per farlo è necessario definire il fattore di crescita $D(z)$, dato dall'equazione 8.76 del Dodelson:
 
 \begin{equation}
-    D(z) = \frac{H(z)}{D_0} \int_z^\infty dz \frac{1+z}{H^3(z)}
+    D(z) = \frac{H(z)}{D_0} \int_z^\infty dz' \frac{1+z'}{H^3(z')} \ ,
 \end{equation}
 
+con il quale possiamo scrivere:
 
-Gravitational lensing of the Cosmic Microwave Background (CMB) provides a powerful probe of the projected mass distribution in the universe. As CMB photons propagate from the last scattering surface ($z_{\text{recomb}} \approx 1089$) to the observer, their trajectories are deflected by the gradients of the gravitational potential generated by large scale structure. In this exercise, we evaluate the impact of this remapping on the CMB power spectra, assuming a standard flat $\Lambda$CDM cosmology with $\Omega_m = 0.3$ and $H_0 = 68$ km/s/Mpc. 
-
-For the temperature anisotropies, the lensing effect is computed using the perturbative expansion derived in Dodelson\& Schmidt (Eq.\eqref{eq:obsexpansion}). Firstly, however we had to derive the power spectrum of the lensing potential in multipole space,
 \begin{equation}
-	C_{\phi\phi}(\ell) = \frac{4}{\ell^4} C_{\kappa\kappa}(\ell)
-\end{equation}
-where, from Sec.13.4,5, the convergence power spectrum is (see specifically Eq.13.51 and previous):
-\begin{equation}
-	C_{\kappa\kappa} (\ell) = \left(\frac32\Omega_mH_0^2\right)^2 \int_0^\infty d\chi (1+z)^2 g_L^2(\chi) P \left( k=\frac{\ell}{\chi},\eta(\chi) \right)
-\end{equation}
-where the Limber approximation is used, the gravitational kernel is defined as
-\begin{equation}
-	g_L(\chi) = 1 - \frac{\chi(z)}{\chi(z_{\text{recomb}})}
-\end{equation}
-To take the matter power spectrum we were given from today $P(k,z=0)$ back to the CMB, we used the growing factor
-\begin{equation}
-	D(z) = \int_z^\infty dz' \frac{1+z'}{H(z')}
-\end{equation}
-such that $P(k,z) = P(k)\cdot D^2(z)$. The Hubble constant in our universe is 
-\begin{equation}
-	H(z) = H_0 \left[\Omega_m(1+z)^3 + \Omega_r(1+z)^4 +\Omega_\Lambda\right]^{1/2}
+    P(k,z) = P(k,0) \cdot D^2(z) \ .
 \end{equation}
 
+Una volta ricavato $C_{\kappa\kappa}$, e dunque $C_{\phi\phi}$, non ci resta che implementare numericamente le equazioni \eqref{eq:13.21}, utilizzando il $C_{TT}$ fornito dai dati.
+
+Abbiamo risolto l'implementazione in Python con un Jupyter Notebook, di seguito lasciamo il link per la Repository GitHub dove sono presenti il notebook e i dataset utilizzati: \href{https://github.com/ste-cartu/Fisica-Gravitazionale-Avanzata}{\faIcon{github}}.
+
+Di seguito riportiamo alcuni grafici ottenuti.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.6\textwidth]{C_KK_calcolato}
+    \caption{Confronto tra $C_{\kappa\kappa}$ calcolato evolvendo lo spettro di potenza della materia e il $C_{\kappa\kappa}$ calcolato dai dati tramite l'equazione \eqref{eq:CKK}.}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.6\textwidth]{C_TT}
+    \caption{Confronto tra $C_{TT}$ con e senza le correzioni di lensing.}
+\end{figure}
 
 
 
 
 \subsection{Spettro di potenza della polarizzazione della CMB}
 
+In questo esercizio le correzioni di lensing gravitazionale sono da applicare ai modi di polarizzazione della CMB: il procedimento è qualitativamente lo stesso del punto precedente, dobbiamo però ricavare delle equazioni analoghe alle \eqref{eq:13.21} per il tensore di polarizzazione $I_{ij}$.
+Dal'equazione 10.4 del Dodelson, ricordiamo che la componente traceless del tensore di polarizzazione, la quale contiene le informazioni relative agli stati di polarizzazione, è:
+
+\begin{equation} \label{eq:Iij}
+    I_{ij}^T = \begin{pmatrix}
+                 Q & U \\
+                U & - Q
+            \end{pmatrix} \ .
+\end{equation} 
+
+Scriviamo uno sviluppo in spazio di Fourier analogo all'equazione \eqref{eq:sviluppotheta} per $I_{ij}^T$:
+
+\begin{equation} \label{eq:sviluppoI}
+\begin{aligned}
+    \tilde I_{ij}^T(\boldsymbol{l}) = & \ I_{ij}^T(\boldsymbol{l}) - \int \frac{d^2 \B l_1}{(2\pi)^2} \boldsymbol{l}_1 \cdot (\B l - \B l_1) \phi_L(\boldsymbol{l}_1) I_{ij}^T(\B l - \B l_1) + \\
+        & + \frac{1}{2} \int \frac{d^2 \B l_1}{(2\pi)^2} \int \frac{d^2 \B l_2}{(2\pi)^2} [\B l_1 \cdot (\B l - \B l_1 - \B l_2)] [\B l_2 \cdot (\B l - \B l_1 - \B l_2)] \phi_L(\B l_1) \phi_L(\B l_2) I_{ij}^T(\B l - \B l_1 - \B l_2) \ ,
+\end{aligned}
+\end{equation}
+
+notando che d'ora in avanti indicheremo con $\tilde A$ una qualsiasi quantità $A$ a cui sono applicate le correzioni di lensing.
+A questo punto, ricordiamo che $Q = I_{11}^T = -I_{22}^T$ e $U = I_{12}^T = I_{21}^T$. Inoltre, avendo definito $\B l = l(\cos \varphi_l, \sin \varphi_l)$, dalle equazioni 10.7 e 10.9 del Dodelson possiamo ottenere i modi di polarizzazione $E$ e $B$ come:
+
+\begin{equation} \label{eq:EB}
+\begin{cases}
+    E(\B l) = Q(\B l) \cos(2\varphi_l) + U(\B l) \sin(2\varphi_l) \\
+    B(\B l) = -Q(\B l) \sin(2\varphi_l) + U(\B l) \cos(2\varphi_l) \ .
+\end{cases}
+\end{equation}
+
+La componente traceless del tensore di polarizzazione diventa dunque:
+
+\begin{equation}
+    I_{ij}^{\text{T}}(\boldsymbol{l}) = 
+        \begin{pmatrix}
+            \cos 2\varphi_l & \sin 2\varphi_l \\
+            \sin 2\varphi_l & -\cos 2\varphi_l
+            \end{pmatrix} E(\boldsymbol{l}) + 
+            \begin{pmatrix}
+            -\sin 2\varphi_l & \cos 2\varphi_l \\
+            \cos 2\varphi_l & \sin 2\varphi_l
+        \end{pmatrix} B(\boldsymbol{l}) \ ,
+\end{equation}
+
+e da essa, ricordando la \eqref{eq:Iij}, possiamo ricavare i parametri $Q$ e $U$ in assenza di modi $B$ iniziali:
+
+\begin{equation} \label{eq:QU}
+\begin{cases}
+    Q(\B l) = E(\B l) \cos(2\varphi') \\
+    U(\B l) = E(\B l) \sin(2\varphi') \ .
+\end{cases}
+\end{equation}
+
+Ora non resta che calcolare i correlatori dei modi $E$ e $B$ ed esprimerli in termini delle componenti di $I_{ij}^T$ per poi utilizzare lo sviluppo \eqref{eq:sviluppoI}.
+
+Calcoliamo lo spettro di potenza con le correzioni di lensing dei modi $E$:
+
+\begin{equation}
+    \tilde C_{EE} = \langle \tilde E(\B l) \tilde E(\B l) \rangle = \langle \tilde Q(\B l) \tilde Q(\B l) \rangle \cos^2(2\varphi_l) + 2\langle \tilde Q(\B l) \tilde U(\B l) \rangle \sin(2\varphi_l) \cos(2\varphi_l) + \langle \tilde U(\B l) \tilde U(\B l) \rangle \sin^2(2\varphi_l) \ ,
+\end{equation}
+
+dove ricordiamo ancora che $Q = I_{11}^T = -I_{22}^T$ e $U = I_{12}^T = I_{21}^T$ e perciò bisognerà utilizzare le componenti corrispondenti dello sviluppo \eqref{eq:sviluppoI}.
+Per i correlatori presenti in questa equazione, valgono le equazioni \eqref{eq:13.21} sostituendo $C(l)$ con il corrispondente spettro imperturbato, calcolato con $B=0$ mediante la \eqref{eq:QU}:
+
+\begin{itemize}
+    
+    \item $C_{QQ}(l) = \langle E(\B l) E(\B l) \rangle \cos^2(2\varphi') = C_{EE}(l) \cos^2(2\varphi')$
+
+    \item $C_{QU}(l) = \langle E(\B l) E(\B l) \rangle \sin(2\varphi') \cos(2\varphi') = C_{EE}(l) \sin(2\varphi') \cos(2\varphi')$
+    
+    \item $C_{UU}(l) = \langle E(\B l) E(\B l) \rangle \sin^2(2\varphi') = C_{EE}(l) \sin^2(2\varphi')$ \ .
+
+\end{itemize}
+
+Poiché tutti i correlatori imperturbati dipendono da $C_{EE}$, definiamo i coefficienti della prima equazione delle \eqref{eq:13.21} per la polarizzazione come:
+
+\begin{itemize}
+    
+    \item $\displaystyle C_{EE}^{(22)}(l) = \int \frac{d^2 \B l_1}{(2\pi)^2} \left[ \boldsymbol{l}_1 \cdot (\boldsymbol{l} - \boldsymbol{l}_1) \right]^2 C_{\phi\phi}(l_1) C_{EE}(|\boldsymbol{l} - \boldsymbol{l}_1|)$
+    
+    \item $\displaystyle C_{EE}^{(13)}(l) = -\frac{1}{4} \left[ \int \frac{d^2 \B l_1}{(2\pi)^2} l_1^2 C_{\phi\phi}(l_1) \right] l^2 C_{EE}(l)$ .
+
+\end{itemize}
+
+Perciò, omettendo le dipendenze da $l$, abbiamo:
+
+\begin{equation}
+\begin{aligned}
+    &\tilde C_{EE} = [ C_{EE} \cos^2(2\varphi_l) + C_{EE}^{(22)} \cos^2(2\varphi_{l-l_1}) + 2C_{EE}^{(13)} \cos^2(2\varphi_l) ] \cos^2(2\varphi_l) + \\
+        & + 2 [ C_{EE} \sin(2\varphi_l)\cos(2\varphi_l) + C_{EE}^{(22)} \sin(2\varphi_{l-l_1})\cos(2\varphi_{l-l_1}) + 2C_{EE}^{(13)} \sin(2\varphi_l)\cos(2\varphi_l) ] \sin(2\varphi_l)\cos(2\varphi_l) + \\
+        & + [ C_{EE} \sin^2(2\varphi_l) + C_{EE}^{(22)} \sin^2(2\varphi_{l-l_1}) + 2C_{EE}^{(13)} \sin^2(2\varphi_l) ] \sin^2(2\varphi_l) \ ,
+\end{aligned}
+\end{equation}
+
+dove i termini trigonometrici dipendenti da $\B l_1$ sono da intendersi dentro agli integrali contenuti nelle definizioni di $C_{EE}^{(22)}$ e $2C_{EE}^{(13)}$.
+Raccogliendo dunque i termini $C_{EE}$, $C_{EE}^{(22)}$ e $2C_{EE}^{(13)}$, lo spettro diventa:
+
+\begin{equation}
+\begin{aligned}
+    &\tilde C_{EE} = C_{EE} [ \cos^4(2\varphi_l) + 2\sin^2(2\varphi_l)\cos^2(2\varphi_l) + \sin^4(2\varphi_l) ] + \\
+        & + C_{EE}^{(22)} [ \cos^2(2\varphi_{l-l_1}) \cos^2(2\varphi_l) + 2\sin(2\varphi_{l-l_1})\cos(2\varphi_{l-l_1}) \sin(2\varphi_l)\cos(2\varphi_l) + \sin^2(2\varphi_{l-l_1}) \sin^2(2\varphi_l) ] + \\
+        & + 2C_{EE}^{(13)} [ \cos^4(2\varphi_l) + 2\sin^2(2\varphi_l)\cos^2(2\varphi_l) + \sin^4(2\varphi_l) ] \ .
+\end{aligned}
+\end{equation}
+
+Le parentesi del primo e del terzo termine restituiscono $[\sin^2(2\varphi_l) + \cos^2(2\varphi_l)]^2 = 1$, mentre quella del secondo termine diventa:
+
+\begin{equation}
+    [\cos(2\varphi_{l-l_1})\cos(2\varphi_l) + \sin(2\varphi_{l-l_1})\sin(2\varphi_l)]^2 = \cos^2[2(\varphi_{l-l_1} - \varphi_l)] \ .
+\end{equation}
+
+Perciò lo spettro dei modi $E$ con le correzioni di lensing è:
+
+\begin{equation} \label{eq:EE}
+\begin{aligned}
+    \tilde C_{EE}(l) =& \ C_{EE}(l) + \int \frac{d^2 \B l_1}{(2\pi)^2} \left[ \boldsymbol{l}_1 \cdot (\boldsymbol{l} - \boldsymbol{l}_1) \right]^2 C_{\phi\phi}(l_1) C_{EE}(|\boldsymbol{l} - \boldsymbol{l}_1|) \cos^2[2(\varphi_{l-l_1} - \varphi_l)] + \\
+        & -\frac{1}{2} \left[ \int \frac{d^2 \B l_1}{(2\pi)^2} l_1^2 C_{\phi\phi}(l_1) \right] l^2 C_{EE}(l) \ .
+\end{aligned}
+\end{equation}
+
+Veniamo ora al calcolo dello spettro di potenza con le correzioni di lensing relativo ai modi $B$ di polarizzazione della CMB.
+Il calcolo è del tutto analogo a quello svolto per i modi $E$:
+
+\begin{equation}
+\begin{aligned}
+    &\tilde C_{BB} = \langle \tilde B(\B l) \tilde B(\B l) \rangle = \langle \tilde Q(\B l) \tilde Q(\B l) \rangle \sin^2(2\varphi_l) - 2\langle \tilde Q(\B l) \tilde U(\B l) \rangle \sin(2\varphi_l) \cos(2\varphi_l) + \langle \tilde U(\B l) \tilde U(\B l) \rangle \cos^2(2\varphi_l) = \\
+        & = C_{EE} [ \sin^2(2\varphi_l)\cos^2(2\varphi_l) - 2\sin^2(2\varphi_l)\cos^2(2\varphi_l) + \sin^2(2\varphi_l)\cos^2(2\varphi_l) ] + \\
+        & + C_{EE}^{(22)} [ \sin^2(2\varphi_l)\cos^2(2\varphi_{l-l_1}) - 2\sin(2\varphi_{l-l_1})\cos(2\varphi_{l-l_1}) \sin(2\varphi_l)\cos(2\varphi_l) + \sin^2(2\varphi_{l-l_1})\cos^2(2\varphi_l) ] + \\
+        & + C_{EE}^{(13)} [ \sin^2(2\varphi_l)\cos^2(2\varphi_l) - 2\sin^2(2\varphi_l)\cos^2(2\varphi_l) + \sin^2(2\varphi_l)\cos^2(2\varphi_l) ] \ .
+\end{aligned}
+\end{equation}
+
+La prima e la terza parentesi si annullano, mentre la seconda diventa:
+
+\begin{equation}
+    [\cos(2\varphi_{l-l_1})\sin(2\varphi_l) - \sin(2\varphi_{l-l_1})\cos(2\varphi_l)]^2 = \sin^2[2(\varphi_{l-l_1} - \varphi_l)] \ .    
+\end{equation}
+
+Dunque lo spettro dei modi $B$ di polarizzazione della CMB con le correzioni di lensing diventa:
+
+\begin{equation} \label{eq:BB}
+    \tilde C_{BB}(l) = \int \frac{d^2 \B l_1}{(2\pi)^2} \left[ \boldsymbol{l}_1 \cdot (\boldsymbol{l} - \boldsymbol{l}_1) \right]^2 C_{\phi\phi}(l_1) C_{EE}(|\boldsymbol{l} - \boldsymbol{l}_1|) \sin^2[2(\varphi_{l-l_1} - \varphi_l)] \ .
+\end{equation}
+
+Facciamo ora una precisazione sugli angoli utilizzati nelle precedenti equazioni.
+Data la definizione di $\B l$:
+
+\begin{equation}
+    \B l = l(\cos \varphi_l, \sin \varphi_l) \ ,
+\end{equation}
+
+l'angolo $\varphi_l$ è dato da $\varphi_l = \arctan(l_y/l_x)$ e in un sistema di assi cartesiani esso è l'angolo tra il vettore $\B l$ e l'asse $x$.
+Dato ora un secondo vettore $\B l_1$, chiamiamo $\theta$ l'angolo tra $\B l_1$ ed $\B l$, e $\varphi_{l_1}$ l'angolo tra $\B l_1$ e l'asse $x$.
+Infine, la differenza vettoriale $\B l - \B l_1$, definisce un altro angolo, $\varphi_{l-l_1}$, ossia l'angolo tra il vettore differenza $\B l - \B l_1$ e l'asse $x$, dato da:
+
+\begin{equation}
+    \varphi_{l-l_1} = \arctan \left[ \frac{ l \sin \varphi_{l_1} \cos \theta - l \cos \varphi_{l_1} \sin \theta - l_1 \sin \varphi_{l_1} }{ l \cos \varphi_{l_1} \cos \theta + l \sin \varphi_{l_1} \sin \theta - l_1 \cos \varphi_{l_1} } \right] \ .
+\end{equation}
+
+Scegliendo arbitrariamente $\B l$ lungo l'asse $x$, ottengo che $\varphi_l = 0$, $\varphi_{l_1} = \theta$ e:
+
+\begin{equation}
+    \varphi_{l-l_1} = \arctan \left[ \frac{l_1 \sin \varphi_{l_1}}{l_1 \cos \varphi_{l_1} -l} \right] \ .
+\end{equation}
+
+Computazionalmente il problema è del tutto analogo al punto precedente: l'obiettivo è quello di calcolare gli spettri con le correzioni di lensing dei modi $E$ \eqref{eq:EE} e $B$ \eqref{eq:BB} della polarizzazione della CMB.
+
+Abbiamo affrontato l'esercizio nello stesso Jupyter Notebook del punto precedente, lasciamo nuovamente il link per la repository di GitHub contenente tutto il materiale: \href{https://github.com/ste-cartu/Fisica-Gravitazionale-Avanzata}{\faIcon{github}}.
+
+Di seguito riportiamo alcuni plot ottenuti.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.6\textwidth]{C_EE}
+    \caption{Confronto tra $C_{EE}$ con e senza le correzioni di lensing.}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.6\textwidth]{modi}
+    \caption{Confronto tra i vari modi di polarizzazione della CMB, con e senza le correzioni di lensing.}
+\end{figure}
 
 
 \end{document}

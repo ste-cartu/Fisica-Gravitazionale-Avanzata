@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.10)  16 FEB 2026 23:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.10)  17 FEB 2026 03:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Latex/esercizi.tex"
-(/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Latex/esercizi.tex
+**"/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/esercizi.tex"
+(/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/esercizi.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -513,33 +513,43 @@ Package pgfplots: loading complementary utilities for your pgf version...
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+))) (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty (/usr/local/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-02-22 L3 programming layer (loader) 
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count319
 \l__pdf_internal_box=\box65
-) (/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Latex/esercizi.aux)
+))
+Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-02-02 L3 Experimental document command parser
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic-helper.sty
+Package: fontawesome5-generic-helper 2022/05/02 v5.15.4 non-uTeX helper for fontawesome5
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping.def))) (/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/esercizi.aux)
 \openout1 = `esercizi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Info: Redefining \it@ocap on input line 25.
-LaTeX Info: Redefining \it@ccap on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Info: Redefining \it@ocap on input line 29.
+LaTeX Info: Redefining \it@ccap on input line 29.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -575,8 +585,8 @@ LaTeX Info: Redefining \it@ccap on input line 25.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 25.
-(/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Latex/esercizi.out) (/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Latex/esercizi.out)
+Package hyperref Info: Link coloring OFF on input line 29.
+(/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/esercizi.out) (/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/esercizi.out)
 \@outlinefile=\write4
 \openout4 = `esercizi.out'.
 
@@ -601,48 +611,68 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Latex/esercizi.toc)
+) (/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/esercizi.toc)
 \tf@toc=\write5
 \openout5 = `esercizi.toc'.
 
  [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [2] [3] [4] [5] (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) [6] [7{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [8] [9]
-Overfull \hbox (0.66617pt too wide) in paragraph at lines 674--675
+Overfull \hbox (0.66617pt too wide) in paragraph at lines 679--680
 []\T1/cmr/m/n/10 Per ver-i-fi-care le equazioni [] ab-bi-amo cal-co-lato il cor-re-la-tore della dis-tribuzione $\OT1/cmr/m/n/10 ^^B[]([])$ \T1/cmr/m/n/10 uti-liz-zando l'espansione
  []
 
 [10] [11]
-
-LaTeX Warning: Reference `eq:obsexpansion' on page 12 undefined on input line 875.
-
-[12] [13] (/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Latex/esercizi.aux)
-
-LaTeX Warning: There were undefined references.
-
+LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on input line 885.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.fd)
+LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not available
+(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 885.
+ [12]
+<./Immagini//C_KK_calcolato.pdf, id=280, 578.16pt x 433.62pt>
+File: ./Immagini//C_KK_calcolato.pdf Graphic file (type pdf)
+<use ./Immagini//C_KK_calcolato.pdf>
+Package pdftex.def Info: ./Immagini//C_KK_calcolato.pdf  used on input line 891.
+(pdftex.def)             Requested size: 290.22107pt x 217.663pt.
+<./Immagini//C_TT.pdf, id=283, 578.16pt x 433.62pt>
+File: ./Immagini//C_TT.pdf Graphic file (type pdf)
+<use ./Immagini//C_TT.pdf>
+Package pdftex.def Info: ./Immagini//C_TT.pdf  used on input line 897.
+(pdftex.def)             Requested size: 290.22107pt x 217.663pt.
+ [13{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc} </Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/./Immagini//C_KK_calcolato.pdf> </Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/./Immagini//C_TT.pdf>] [14]
+<./Immagini//C_EE.pdf, id=369, 578.16pt x 433.62pt>
+File: ./Immagini//C_EE.pdf Graphic file (type pdf)
+<use ./Immagini//C_EE.pdf>
+Package pdftex.def Info: ./Immagini//C_EE.pdf  used on input line 1078.
+(pdftex.def)             Requested size: 290.22107pt x 217.663pt.
+<./Immagini//modi.pdf, id=370, 578.16pt x 433.62pt>
+File: ./Immagini//modi.pdf Graphic file (type pdf)
+<use ./Immagini//modi.pdf>
+Package pdftex.def Info: ./Immagini//modi.pdf  used on input line 1084.
+(pdftex.def)             Requested size: 290.22107pt x 217.663pt.
+ [15] [16 </Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/./Immagini//C_EE.pdf> </Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/./Immagini//modi.pdf>] (/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/esercizi.aux)
 Package rerunfilecheck Info: File `esercizi.out' has not changed.
 (rerunfilecheck)             Checksum: F82C38E46391DBA191B3F28789375415;1954.
  ) 
 Here is how much of TeX's memory you used:
- 33669 strings out of 476025
- 782785 string characters out of 5790017
+ 36870 strings out of 476025
+ 854507 string characters out of 5790017
  1885388 words of memory out of 5000000
- 53474 multiletter control sequences out of 15000+600000
- 531638 words of font info for 81 fonts, out of 8000000 for 9000
+ 56630 multiletter control sequences out of 15000+600000
+ 531959 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,19n,104p,843b,1323s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on "/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Latex/esercizi.pdf" (13 pages, 439975 bytes).
+ 102i,19n,104p,879b,1323s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on "/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/esercizi.pdf" (16 pages, 657240 bytes).
 PDF statistics:
- 433 PDF objects out of 1000 (max. 8388607)
- 351 compressed objects within 4 object streams
- 115 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 583 PDF objects out of 1000 (max. 8388607)
+ 487 compressed objects within 5 object streams
+ 134 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
