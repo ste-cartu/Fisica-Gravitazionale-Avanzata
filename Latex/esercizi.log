@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.10)  18 FEB 2026 11:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.10)  18 FEB 2026 12:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -644,34 +644,39 @@ File: ./Immagini//C_TT.pdf Graphic file (type pdf)
 <use ./Immagini//C_TT.pdf>
 Package pdftex.def Info: ./Immagini//C_TT.pdf  used on input line 897.
 (pdftex.def)             Requested size: 290.22107pt x 217.663pt.
- [13{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc} </Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/./Immagini//C_KK_calcolato.pdf> </Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/./Immagini//C_TT.pdf>] [14]
-<./Immagini//C_EE.pdf, id=369, 578.16pt x 433.62pt>
+<./Immagini//differenze.pdf, id=283, 578.16pt x 433.62pt>
+File: ./Immagini//differenze.pdf Graphic file (type pdf)
+<use ./Immagini//differenze.pdf>
+Package pdftex.def Info: ./Immagini//differenze.pdf  used on input line 903.
+(pdftex.def)             Requested size: 290.22107pt x 217.663pt.
+ [13{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc} </Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/./Immagini//C_KK_calcolato.pdf> </Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/./Immagini//C_TT.pdf>] [14 </Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/./Immagini//differenze.pdf>] [15]
+<./Immagini//C_EE.pdf, id=398, 578.16pt x 433.62pt>
 File: ./Immagini//C_EE.pdf Graphic file (type pdf)
 <use ./Immagini//C_EE.pdf>
-Package pdftex.def Info: ./Immagini//C_EE.pdf  used on input line 1078.
+Package pdftex.def Info: ./Immagini//C_EE.pdf  used on input line 1084.
 (pdftex.def)             Requested size: 290.22107pt x 217.663pt.
-<./Immagini//modi.pdf, id=370, 578.16pt x 433.62pt>
+<./Immagini//modi.pdf, id=399, 578.16pt x 433.62pt>
 File: ./Immagini//modi.pdf Graphic file (type pdf)
 <use ./Immagini//modi.pdf>
-Package pdftex.def Info: ./Immagini//modi.pdf  used on input line 1084.
+Package pdftex.def Info: ./Immagini//modi.pdf  used on input line 1090.
 (pdftex.def)             Requested size: 290.22107pt x 217.663pt.
- [15] [16 </Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/./Immagini//C_EE.pdf> </Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/./Immagini//modi.pdf>] (/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/esercizi.aux)
+ [16 </Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/./Immagini//C_EE.pdf>] [17 </Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/./Immagini//modi.pdf>] (/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/esercizi.aux)
 Package rerunfilecheck Info: File `esercizi.out' has not changed.
 (rerunfilecheck)             Checksum: F82C38E46391DBA191B3F28789375415;1954.
  ) 
 Here is how much of TeX's memory you used:
- 36870 strings out of 476025
- 854507 string characters out of 5790017
+ 36881 strings out of 476025
+ 854795 string characters out of 5790017
  1888388 words of memory out of 5000000
- 56630 multiletter control sequences out of 15000+600000
+ 56639 multiletter control sequences out of 15000+600000
  531959 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,19n,104p,879b,1323s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on "/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/esercizi.pdf" (16 pages, 657231 bytes).
+Output written on "/Users/ste_cartu/Library/CloudStorage/OneDrive-UniversitàdegliStudidiMilano/Università/Magistrale/Fisica Gravitazionale Avanzata/Repository/Latex/esercizi.pdf" (17 pages, 663725 bytes).
 PDF statistics:
- 583 PDF objects out of 1000 (max. 8388607)
- 487 compressed objects within 5 object streams
- 134 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 606 PDF objects out of 1000 (max. 8388607)
+ 507 compressed objects within 6 object streams
+ 136 named destinations out of 1000 (max. 500000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
