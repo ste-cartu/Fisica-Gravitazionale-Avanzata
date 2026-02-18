@@ -8,4 +8,4 @@
 \contentsline {section}{\numberline {2}Cosmologia}{8}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Equazioni della Sezione 13.3 del Dodelson}{8}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Spettro di potenza della temperatura della CMB}{12}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Spettro di potenza della polarizzazione della CMB}{13}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3}Spettro di potenza della polarizzazione della CMB}{14}{subsection.2.3}%
