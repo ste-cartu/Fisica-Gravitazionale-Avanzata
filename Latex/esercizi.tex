@@ -160,7 +160,7 @@ Otteniamo così un sistema di due equazioni differenziali disaccoppiate, una per
     \end{cases}
 \end{equation}
 
-Osserviamo che la dinamica di interesse è descritta dall'equazione per la coordinata relativa, perciò ci concentreremo sulla seconda equazione del sistema \eqref{eq:sommadiffrel}, definendo la la frequenza propria dell'oscillatore $\omega_0^2 \equiv \frac{k}{\mu}$ e la costante di smorzamento della molla $\gamma \equiv \frac{a}{2\mu}$.
+Osserviamo che la dinamica di interesse è descritta dall'equazione per la coordinata relativa, perciò ci concentreremo sulla seconda equazione del sistema \eqref{eq:sommadiffrel}, definendo la frequenza propria dell'oscillatore $\omega_0^2 \equiv \frac{k}{\mu}$ e la costante di smorzamento della molla $\gamma \equiv \frac{a}{2\mu}$.
 Notando infine che $\ddot{h}_+^{TT} = -\omega^2{h}_+^{TT}$, otteniamo l'equazione del moto richiesta:
 
 \begin{equation} \label{eq:eqmoto}
@@ -352,7 +352,7 @@ Ed infine, integrando nuovamente sul periodo $T=\frac{2\pi}{\omega}$ otteniamo l
     E_q = \int_0^{2\pi/\omega} P dt = \frac{8 \pi}{15} \frac{G \mu^2 A^2 \omega^5}{c^5} [4A^2 + L^2] = \frac{32 \pi}{15} \frac{G \mu^2}{A} \left( \frac{v}{c} \right)^5 \left[ 1 + \frac{L^2}{4A^2} \right] \ ,
 \end{equation}
 
-che scala come $(v/c)^5$.
+che scala come $(v/c)^5$, dove $v = A\omega$.
 
 
 
@@ -529,7 +529,7 @@ In questo esercizio vogliamo comprendere le basi del lensing della CMB.
         \simeq T(\B\theta) + \Delta \theta^i \frac{\partial}{\partial \theta^i} T(\B\theta) + \frac{1}{2} \Delta \theta^i \Delta \theta^j \frac{\partial^2}{\partial \theta^i \partial \theta^j} T(\B\theta) \ .
 \end{equation}
 
-È lo sviluppo di Taylor della distribuzione di temperatura $T$ al variare dell'angolo $\B\theta$ bidimensionale al secondo ordine. 
+È lo sviluppo di Taylor al secondo ordine della distribuzione di temperatura $T$ al variare dell'angolo $\B\theta$ bidimensionale, calcolato in approssimazione di cielo piatto. 
 Con $T(\B \theta)$ si intende la distribuzione di temperatura al momento di emissione della CMB. \hfill $\blacksquare$
 
 
@@ -644,7 +644,7 @@ Nei prossimi calcoli, indicheremo i termini di questo sviluppo come:
     
     \item $\displaystyle \delta_\Theta^{(2)} (\B l) = - \int \frac{d^2 \B l_1}{(2\pi)^2} \boldsymbol{l}_1 \cdot (\B l - \B l_1) \phi_L(\boldsymbol{l}_1) \Theta(\B l - \B l_1)$
 
-    \item $\displaystyle \delta_\Theta^{(2)} (\B l) = \frac{1}{2} \int \frac{d^2 \B l_1}{(2\pi)^2} \int \frac{d^2 \B l_2}{(2\pi)^2} [\B l_1 \cdot (\B l - \B l_1 - \B l_2)] [\B l_2 \cdot (\B l - \B l_1 - \B l_2)] \phi_L(\B l_1) \phi_L(\B l_2) \Theta(\B l - \B l_1 - \B l_2)$ .
+    \item $\displaystyle \delta_\Theta^{(3)} (\B l) = \frac{1}{2} \int \frac{d^2 \B l_1}{(2\pi)^2} \int \frac{d^2 \B l_2}{(2\pi)^2} [\B l_1 \cdot (\B l - \B l_1 - \B l_2)] [\B l_2 \cdot (\B l - \B l_1 - \B l_2)] \phi_L(\B l_1) \phi_L(\B l_2) \Theta(\B l - \B l_1 - \B l_2)$ .
 
 \end{itemize}
 
@@ -688,7 +688,7 @@ Inoltre, possiamo considerare $\Theta(\B l)$ e $\phi_L(\B l)$ scorrelati tra di 
 Questo implica che gli unici termini non nulli sono:
 
 \begin{equation}
-    C_{\text{obs}}(l) = \langle \delta_\Theta^{(1)}(\B l) \delta_\Theta^{(1)}(\B l) \rangle + \langle \delta_\Theta^{(1)}(\B l) \delta_\Theta^{(2)}(\B l) \rangle + \langle \delta_\Theta^{(2)}(\B l) \delta_\Theta^{(1)}(\B l) \rangle + \langle \delta_\Theta^{(2)}(\B l) \delta_\Theta^{(2)}(\B l) \rangle \ ,
+    C_{\text{obs}}(l) = \langle \delta_\Theta^{(1)}(\B l) \delta_\Theta^{(1)}(\B l) \rangle + \langle \delta_\Theta^{(1)}(\B l) \delta_\Theta^{(3)}(\B l) \rangle + \langle \delta_\Theta^{(3)}(\B l) \delta_\Theta^{(1)}(\B l) \rangle + \langle \delta_\Theta^{(2)}(\B l) \delta_\Theta^{(2)}(\B l) \rangle \ ,
 \end{equation}
 
 dove abbiamo trascurato il termine $\langle \delta_\Theta^{(3)}(\B l) \delta_\Theta^{(3)}(\B l) \rangle$, che è del quarto ordine.
@@ -713,7 +713,7 @@ Adesso consideriamo i termini mancanti, definendo $\B L = \B l - \B l_1 - \B l_2
 
 \begin{equation}
 \begin{aligned}
-    \langle \delta&_\Theta^{(1)}(\B l) \delta_\Theta^{(2)}(\B l) \rangle + \langle \delta_\Theta^{(2)}(\B l) \delta_\Theta^{(1)}(\B l) \rangle = \\
+    \langle \delta&_\Theta^{(1)}(\B l) \delta_\Theta^{(3)}(\B l) \rangle + \langle \delta_\Theta^{(3)}(\B l) \delta_\Theta^{(1)}(\B l) \rangle = \\
         & = \frac{1}{2} \int \frac{d^2 \B l_1}{(2\pi)^2} \int \frac{d^2 \B l_2}{(2\pi)^2} (\boldsymbol{l}_1 \cdot \boldsymbol{L})(\boldsymbol{l}_2 \cdot \boldsymbol{L}) \big[ \langle \phi_L^*(\boldsymbol{l}_1) \phi_L^*(\boldsymbol{l}_2) \Theta(\boldsymbol{l}) \Theta^*(\boldsymbol{L})\rangle + \langle \phi_L(\boldsymbol{l}_1) \phi_L(\boldsymbol{l}_2) \Theta^*(\boldsymbol{l}) \Theta(\boldsymbol{L}) \rangle \big] \ .
 \end{aligned}
 \end{equation}
@@ -722,7 +722,7 @@ Applicando nuovamente il teorema di Wick per separare i contributi dei due campi
 
 \begin{equation}
 \begin{aligned}
-    \langle \delta&_\Theta^{(1)}(\B l) \delta_\Theta^{(2)}(\B l) \rangle + \langle \delta_\Theta^{(2)}(\B l) \delta_\Theta^{(1)}(\B l) \rangle = \\
+    \langle \delta&_\Theta^{(1)}(\B l) \delta_\Theta^{(3)}(\B l) \rangle + \langle \delta_\Theta^{(3)}(\B l) \delta_\Theta^{(1)}(\B l) \rangle = \\
         & = \frac{1}{2} \int \frac{d^2 \B l_1}{(2\pi)^2} \int \frac{d^2 \B l_2}{(2\pi)^2} (\boldsymbol{l}_1 \cdot \boldsymbol{L})(\boldsymbol{l}_2 \cdot \boldsymbol{L}) \big[ \langle \phi_L(-\boldsymbol{l}_1) \phi_L^*(\boldsymbol{l}_2) \rangle \langle \Theta(\boldsymbol{l}) \Theta^*(\boldsymbol{L})\rangle + \langle \phi_L(\boldsymbol{l}_1) \phi_L^*(-\boldsymbol{l}_2) \rangle \langle \Theta^*(\boldsymbol{l}) \Theta(\boldsymbol{L}) \rangle \big] \ .
 \end{aligned}
 \end{equation}
@@ -731,7 +731,7 @@ Applicando le definizioni degli spettri di potenza, otteniamo dalla \eqref{eq:13
 In tal modo si ha che $\B L = \B l$, compare un segno meno davanti all'integrale ed in aggiunta i due contributi si sommano, dando:
 
 \begin{equation} \label{eq:quasiC13}
-    \langle \delta_\Theta^{(1)}(\B l) \delta_\Theta^{(2)}(\B l) \rangle + \langle \delta_\Theta^{(2)}(\B l) \delta_\Theta^{(1)}(\B l) \rangle = - \int \frac{d^2 \B l_1}{(2\pi)^2} (\boldsymbol{l} \cdot \boldsymbol{l}_1)^2 C_{\phi\phi}(l_1) C(l) \ .
+    \langle \delta_\Theta^{(1)}(\B l) \delta_\Theta^{(3)}(\B l) \rangle + \langle \delta_\Theta^{(3)}(\B l) \delta_\Theta^{(1)}(\B l) \rangle = - \int \frac{d^2 \B l_1}{(2\pi)^2} (\boldsymbol{l} \cdot \boldsymbol{l}_1)^2 C_{\phi\phi}(l_1) C(l) \ .
 \end{equation}
 
 Infine, per scrivere l'equazione nella stessa forma del Dodelson, notiamo che, indicato con $\varphi$ l'angolo tra $\B l$ e $\B l_1$:
@@ -753,7 +753,7 @@ Confrontando questi due risultati, otteniamo che:
 Riprendendo l'equazione \eqref{eq:quasiC13}, siamo dunque arrivati a poter scrivere:
 
 \begin{equation}
-    \langle \delta_\Theta^{(1)}(\B l) \delta_\Theta^{(2)}(\B l) \rangle + \langle \delta_\Theta^{(2)}(\B l) \delta_\Theta^{(1)}(\B l) \rangle = -\frac{l^2}{2} \left[ \int \frac{d^2 \B l_1}{(2\pi)^2} l_1^2 C_{\phi_{\text{L}}\phi_{\text{L}}}(l_1) \right] C(l) \equiv 2C^{(13)}(l) \ .
+    \langle \delta_\Theta^{(1)}(\B l) \delta_\Theta^{(3)}(\B l) \rangle + \langle \delta_\Theta^{(3)}(\B l) \delta_\Theta^{(1)}(\B l) \rangle = -\frac{l^2}{2} \left[ \int \frac{d^2 \B l_1}{(2\pi)^2} l_1^2 C_{\phi_{\text{L}}\phi_{\text{L}}}(l_1) \right] C(l) \equiv 2C^{(13)}(l) \ .
 \end{equation}
 
 Abbiamo dunque mostrato che lo spettro delle anisotropie di temperatura corretto con gli effetti di lensing può essere scomposto come:
@@ -843,7 +843,7 @@ I fotoni provenienti dalla CMB sono stati emessi a redshift $z^* = z_{\text{rico
 In questo esercizio proviamo a ricostruire lo spettro delle anisotropie di temperatura partendo dal modello cosmologico standard, il $\Lambda$CDM.
 
 L'obiettivo quindi è quello di ricostruire computazionalmente l'equazione \eqref{eq:13.21}, a partire dai dati dello spettro senza correzioni di lensing.
-Per calcolare $C(l)$, che in questa sezione indicheremo con $C_{TT}$, occorre innanzitutto avere informazioni su $C_{\phi_L \phi_L}(l)$ (d'ora in poi indicato con $C{\phi\phi}$): dall'equazione 13.44 del Dodelson, possiamo dire che:
+Per calcolare $C(l)$, che in questa sezione indicheremo con $C_{TT}$, occorre innanzitutto avere informazioni su $C_{\phi_L \phi_L}(l)$ (d'ora in poi indicato con $C_{\phi\phi}$): dall'equazione 13.44 del Dodelson, possiamo dire che:
 
 \begin{equation} \label{eq:CKK}
     C_{\phi\phi}(l) = \frac{4}{l^4} C_{\kappa\kappa}(l) \ ,
